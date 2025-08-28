@@ -22,3 +22,8 @@ The Library Management System (LMS) is a desktop application built with VB.NET (
  - Frontend / UI: VB.NET (WinForms) in Visual Studio 2022
  - Backend Database: SQL Server (Express)
  - Installer: Visual Studio Installer Project
+
+   ## 📥 Download
+You can download the latest installer here:
+➡️ [Download LMS Installer](https://github.com/CedricCawaling/ESTI-Library-Management-System/releases/tag/v1.0.0)
+
