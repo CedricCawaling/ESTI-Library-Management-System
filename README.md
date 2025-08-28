@@ -1,4 +1,4 @@
-# 📘 Library Management System (LMS)
+# 📘 ESTI Library Management System (ESTI LMS)
 ## 📖 Overview
 The Library Management System (LMS) is a desktop application built with VB.NET (WinForms) and MySQL/SQL Server for managing library operations. It is designed for librarians, assistant librarians, and clerks to efficiently handle books, visitors, and records.
 
