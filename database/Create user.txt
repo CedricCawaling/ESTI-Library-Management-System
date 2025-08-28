@@ -1,0 +1,4 @@
+CREATE LOGIN lms_user WITH PASSWORD = 'Lms@2024Secure';
+USE LMS;
+CREATE USER lms_user FOR LOGIN lms_user;
+ALTER ROLE db_owner ADD MEMBER lms_user;
