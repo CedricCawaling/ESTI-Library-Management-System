@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA1B90DA-AED4-4811-A716-50DB96AF75F9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>LMS.My.MyApplication</StartupObject>
+    <RootNamespace>LMS</RootNamespace>
+    <AssemblyName>LMS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Cedric Cawaling\Desktop\ESTI Library Management System\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\..\Desktop\ESTI LMS Installer\</OutputPath>
+    <DocumentationFile>LMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseWinFormsOutOfProcDesigner>True</UseWinFormsOutOfProcDesigner>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseWinFormsOutOfProcDesigner>True</UseWinFormsOutOfProcDesigner>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iCOn.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3B3F27886CA3F50DD6C02BF17741AF7C6F007915</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>LMS_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML, Version=0.105.0.0, Culture=neutral, PublicKeyToken=fd1eb21b62ae805b, processorArchitecture=MSIL">
+      <HintPath>packages\ClosedXML.0.105.0\lib\netstandard2.0\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML.Parser, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1d5f7376574c51ec, processorArchitecture=MSIL">
+      <HintPath>packages\ClosedXML.Parser.2.0.0\lib\netstandard2.0\ClosedXML.Parser.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=3.1.1.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>packages\DocumentFormat.OpenXml.3.1.1\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml.Framework, Version=3.1.1.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>packages\DocumentFormat.OpenXml.Framework.3.1.1\lib\net46\DocumentFormat.OpenXml.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.1.0.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>packages\ExcelNumberFormat.1.1.0\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Otp.NET, Version=1.4.0.0, Culture=neutral, PublicKeyToken=38a48df817e173a6, processorArchitecture=MSIL">
+      <HintPath>packages\Otp.NET.1.4.0\lib\net461\Otp.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QRCoder, Version=1.6.0.0, Culture=neutral, PublicKeyToken=c4ed5b9ae8358a28, processorArchitecture=MSIL">
+      <HintPath>packages\QRCoder.1.6.0\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="RBush, Version=4.0.0.0, Culture=neutral, PublicKeyToken=c77e27b81f4d0187, processorArchitecture=MSIL">
+      <HintPath>packages\RBush.Signed.4.0.0\lib\net47\RBush.dll</HintPath>
+    </Reference>
+    <Reference Include="SixLabors.Fonts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d998eea7b14cab13, processorArchitecture=MSIL">
+      <HintPath>packages\SixLabors.Fonts.1.0.0\lib\netstandard2.0\SixLabors.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.6.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.4.7.0\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminManager.vb" />
+    <Compile Include="BookDetails.Designer.vb">
+      <DependentUpon>BookDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookManagement.Designer.vb">
+      <DependentUpon>BookManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BookManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CircularProgressBar.Designer.vb">
+      <DependentUpon>CircularProgressBar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CircularProgressBar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CreateAdmin.Designer.vb">
+      <DependentUpon>CreateAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomBarChart.Designer.vb">
+      <DependentUpon>CustomBarChart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomBarChart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomLineChart.Designer.vb">
+      <DependentUpon>CustomLineChart.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomLineChart.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditAccession.Designer.vb">
+      <DependentUpon>EditAccession.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditAccession.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnterPassword.Designer.vb">
+      <DependentUpon>EnterPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EnterPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileHelper.vb" />
+    <Compile Include="FormUtils.vb" />
+    <Compile Include="ForPasting.Designer.vb">
+      <DependentUpon>ForPasting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ForPasting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LMSDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LMSDataSet.vb">
+      <DependentUpon>LMSDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LogEntry.Designer.vb">
+      <DependentUpon>LogEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogHistory.Designer.vb">
+      <DependentUpon>LogHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Accession.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.AdminPanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.ChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.GenerateReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Navigation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Notification.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.ProfilePanel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Statistics.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OPAC.Designer.vb">
+      <DependentUpon>OPAC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OPAC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutlineRoundPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PasswordUtils.vb" />
+    <Compile Include="QuickLogEntry.Designer.vb">
+      <DependentUpon>QuickLogEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="QuickLogEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoundedButton.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RoundedPanel.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RoundedTextbox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RoundPicturebox.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SelectBorrowerPopup.Designer.vb">
+      <DependentUpon>SelectBorrowerPopup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SelectBorrowerPopup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetPassword.Designer.vb">
+      <DependentUpon>SetPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SetPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TransactionDetails.Designer.vb">
+      <DependentUpon>TransactionDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionDetails.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transactions.Designer.vb">
+      <DependentUpon>Transactions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BookDetails.resx">
+      <DependentUpon>BookDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookManagement.resx">
+      <DependentUpon>BookManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CircularProgressBar.resx">
+      <DependentUpon>CircularProgressBar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAdmin.resx">
+      <DependentUpon>CreateAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomBarChart.resx">
+      <DependentUpon>CustomBarChart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomLineChart.resx">
+      <DependentUpon>CustomLineChart.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAccession.resx">
+      <DependentUpon>EditAccession.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnterPassword.resx">
+      <DependentUpon>EnterPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForPasting.resx">
+      <DependentUpon>ForPasting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogEntry.resx">
+      <DependentUpon>LogEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogHistory.resx">
+      <DependentUpon>LogHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OPAC.resx">
+      <DependentUpon>OPAC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuickLogEntry.resx">
+      <DependentUpon>QuickLogEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoundedButton.resx">
+      <DependentUpon>RoundedButton.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoundedPanel.resx">
+      <DependentUpon>RoundedPanel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoundedTextbox.resx">
+      <DependentUpon>RoundedTextbox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoundPicturebox.resx">
+      <DependentUpon>RoundPicturebox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectBorrowerPopup.resx">
+      <DependentUpon>SelectBorrowerPopup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetPassword.resx">
+      <DependentUpon>SetPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionDetails.resx">
+      <DependentUpon>TransactionDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transactions.resx">
+      <DependentUpon>Transactions.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="LMSDataSet.xsc">
+      <DependentUpon>LMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LMSDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LMSDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LMSDataSet.xss">
+      <DependentUpon>LMSDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LMS_TemporaryKey.pfx" />
+    <None Include="My Project\app.config" />
+    <None Include="My Project\app1.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\LMS.LMSDataSetTableAdapters.AdminTableAdapter.datasource" />
+    <None Include="My Project\DataSources\LMS.LMSDataSetTableAdapters.TableAdapterManager.datasource" />
+    <None Include="My Project\DataSources\LMSDataSet.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="iCOn.ico" />
+    <None Include="Resources\about.png" />
+    <None Include="Resources\pdf1.png" />
+    <None Include="Resources\modern-abstract-blue-book-cover-template-vector-16375836.jpg" />
+    <None Include="Resources\Group 114.png" />
+    <None Include="Resources\usermanagement21.png" />
+    <None Include="Resources\image 1.png" />
+    <None Include="Resources\Export.png" />
+    <None Include="Resources\back.png" />
+    <None Include="packages.config" />
+    <None Include="Resources\statsB.png" />
+    <None Include="Resources\StatsA.png" />
+    <None Include="Resources\book management2.png" />
+    <None Include="Resources\OPAC.png" />
+    <None Include="Resources\Logbook.png" />
+    <None Include="Resources\circulation.png" />
+    <None Include="Resources\book management.png" />
+    <None Include="Resources\Book Management1.png" />
+    <None Include="Resources\OPAC management.png" />
+    <None Include="Resources\BookManagement.png" />
+    <None Include="Resources\transaction man.png" />
+    <None Include="Resources\usermanagement1.png" />
+    <None Include="Resources\usermanagement.png" />
+    <None Include="Resources\LMSintro.png" />
+    <None Include="Resources\actNotif.png" />
+    <None Include="Resources\sReport.png" />
+    <None Include="Resources\Snotif.png" />
+    <None Include="Resources\Group 91.png" />
+    <None Include="Resources\Group 90.png" />
+    <None Include="Resources\Group 81.png" />
+    <None Include="Resources\Group 80.png" />
+    <None Include="Resources\Group 78.png" />
+    <None Include="Resources\Group 22.png" />
+    <None Include="Resources\Group 14.png" />
+    <None Include="Resources\BoxArrowRight.png" />
+    <None Include="Resources\users.png" />
+    <None Include="Resources\total.png" />
+    <None Include="Resources\OVERDUE.png" />
+    <None Include="Resources\borrowed.png" />
+    <None Include="Resources\total books.png" />
+    <None Include="Resources\ESTI Logo.png" />
+    <None Include="Resources\353416488_563129836032475_3268153013707264740_n__1_-removebg-preview 3.png" />
+    <None Include="Resources\settingsb.png" />
+    <None Include="Resources\logoutb.png" />
+    <None Include="Resources\hp.png" />
+    <None Include="Resources\homepage.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
